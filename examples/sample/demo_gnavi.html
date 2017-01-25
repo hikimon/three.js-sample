@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>demo gnavi</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <style>
+      html, body {
+        height: 100%;
+        overflow: hidden;
+        background-color: #f0f0f0;
+      }
+      .form {
+        background-color: #fef4e5;
+        box-shadow: 0 0 25px 0 rgba(0,0,0,0.5);
+      }
+      .form table {
+        background-color: #fff;
+      }
+      #blocker {
+        position: absolute;
+        /* background-color: rgba(255, 0, 0, 0.5); */
+        top: 50px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="form">
+      <table border="1" cellspacing="0" bordercolor="#ccc">
+        <tr>
+          <td>key ID</td>
+          <td><input type='password' placeholder='access key' class='js--key'></td>
+          <td>フリーワード</td>
+          <td><input type='text' placeholder='freeword' class='js--freeword'></td>
+          <td><input type='number' placeholder='1' class='js--page' style="width:50px;"></td>
+          <td><input type='button' value='検索' class='js--apply' /></td>
+          <td><input type='button' value='リセット' class='js--reset' /></td>
+        </tr>
+      </table>
+    </div>
+    <div id="container"></div>
+    <div id="blocker"></div>
+
+    <script src='https://code.jquery.com/jquery-3.1.1.min.js'></script>
+    <script src="../../build/three.js"></script>
+    <script src="js/controls/TrackballControls.js"></script>
+    <script src="js/renderers/CSS3DRenderer.js"></script>
+    <script src="demo_gnavi.js"></script>
+  </body>
+</html>
